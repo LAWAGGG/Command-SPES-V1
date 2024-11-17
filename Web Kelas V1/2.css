@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.tb{
+    left: 1rem;
+    right: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 10px 10px rgba(25, 25, 25, 0.337);
+    position: fixed;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+.kiri {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: .5rem;
+
+}
+
+.biasa{
+    display: flex;
+}
+
+.gambar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.gambar img{
+    width: 100%;
+   
+}
+
+.menu{
+    height: 100%;
+    width: 0;
+    z-index: 20;
+    top:0 ;
+    left: 0;
+   background-color: #11111172;
+   overflow-x: hidden;
+   transition: 0.5s; 
+   position: fixed;
+   backdrop-filter: blur(1px);
+}
+
+.closebtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 5px 5px;
+    border: 0;
+    margin-left:70% ;
+    margin-top: 5px;
+}
+
+.openbtn{
+    display: none;
+    font-size: 0px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 9px;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.openbtn:hover {
+    background-color: #005786;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 8px 8px 8px 15px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.menu a:hover{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(0, 200, 255);
+    background-color: #f1f1f1;
+    margin: 0 15px 15px 0px;
+    border-radius: 8px;
+}
+
+#main{
+    display: flex;
+    transition: margin-left .5s;
+    padding: 1px;
+}
+
+.kanan{
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    gap: 1rem;
+}
+.welkam > *{
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 300ms;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+    position: relative;
+    background-color: black;
+    background-image: url("/foto/WhatsApp\ Image\ 2024-09-17\ at\ 20.20.48_79fd4373.jpg");
+    display: flex;
+}
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.467);
+    z-index: 1;
+    width: 100%;
+}
+
+#Welkam{
+    z-index: 10000;
+}
+
+.welkam{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 100; 
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sosmed{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.sosmed i{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sosmed button{
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.sosmed button.insta:hover{
+  color:  #c13584;
+}
+
+.sosmed button.yutub:hover{
+    color:  red;
+  }
+
+.sosmed button.wa:hover{
+    color: greenyellow;
+}
+
+.welkam h1{
+    font-size: 4rem;
+}
+
+.cnt{
+    background: linear-gradient(to right,#000000,#0068a0 );
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.isi{
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.isi p{
+    font-size: 1rem;
+}
+
+.isi h1{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    font-size: 3rem;
+}
+
+.isi h1:hover{
+    font-size: 4rem;
+    color: #13a4f3;
+}
+
+.kotak{
+    display: flex;
+    width: 200px;
+    height: 300px;
+    background-color: #222222;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    transition: 0.3s;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.row .kotak:hover {
+    width: 310px;
+    height: 410px;
+    background-color: #404040;
+    outline: white 2px solid;
+}
+
+.kotak:hover {
+    width: 310px;
+    height: 410px;
+    background-color: #404040;
+    outline: white 2px solid;
+}
+
+.row .kotak{
+    width: 300px;
+    height: 400px;
+}
+
+.row .foto{
+    width: 92%;
+}
+
+.bungkus .kotak{
+    width: 150px;
+    height: 250px;
+}
+
+.bungkus .foto{
+    width: 85%;
+}
+
+.bungkus{
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+}
+
+.row .judul{
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    left: 15%;
+    transform: translatex(-20%);
+    top: 0;
+    color: transparent;
+    transition: 0.3s;
+    -webkit-text-stroke: .9px #13a4f3;
+}
+
+.row .kotak:hover .judul{
+    z-index: 1;
+    top: -3rem;
+    opacity: 1;
+}
+
+
+.kata{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.kata p{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.foto{
+    width: 180px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px 10px 0 10px;
+    border-radius: 10px;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+}
+
+.halo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.cnt1{
+    width: 100%;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+    position: relative;
+    background-color: black;
+    background-image: url('/foto/fotoo.jpg');
+    display: flex;
+    color: white;
+}
+
+.badann{
+    width: 800px;
+    max-width: 100%;
+    display:flex ;
+    gap: 1rem;
+    align-items: center;
+}
+
+.foto1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.foto1{
+    border-radius: 50%;
+    width: 1500px;
+    height: 250px;
+    overflow: hidden;
+    background-color: #005786;
+    transition: 0.3s;
+}
+
+.penjelasan{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+.penjelasan h1{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.penjelasan h1:hover{
+    color: rgb(0, 183, 255);
+}
+
+.penjelasan p{
+    font-size: 1rem;
+    transition: 0.3s;
+}
+.end{
+    color:white;
+    padding: 20px 0px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    font-weight: none;
+    background-color: black;
+}
+.baris{
+    flex-direction: row;
+    display: flex;
+    gap: 1rem;
+}
+
+.baris button{
+    padding: 15px 20px;
+    border-radius: 50rem;
+    border: none;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.baris button:hover{
+    outline: 2px solid #00e9fe;
+}
+
+@media (max-width: 888px) {
+    .bungkus {
+        flex-direction: column; 
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .halo{
+        flex-direction: column;
+    }
+    .row .judul{
+        display: none;
+    }
+    .openbtn{
+        display: block;
+    }
+    .kanan{
+        display: flex;
+    }
+    .tengah{
+        display: none;
+    }
+}
+
+@media (max-width :768px){
+    .bungkus {
+        flex-direction: column; 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .halo{
+        flex-direction: column;
+    }
+    .welkam{
+        padding: 30px;
+    }
+    .welkam h1{
+        font-size:2.3rem ;
+    }
+    .welkam p{
+        font-size: 1rem;
+    }
+    .isi h1{
+        display: inline-block;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        transition: 0.3s;
+        font-size: 2rem;
+    }
+    
+    .isi h1:hover{
+        font-size: 2.5rem;
+        color: #13a4f3;
+    }
+
+    .badann{
+        padding: 20px;
+    }
+
+    .penjelasan p{
+        font-size: .7rem;
+    }
+    
+    .penjelasan h1{
+        font-size: 1.5rem;
+    }
+    .foto1{
+        box-shadow: 5px 5px 0 solid black;
+        border-radius: 50%;
+        width: 1000px;
+        height: 150px;
+        outline: 2px white;
+        overflow: hidden;
+        background-color: #005786;
+    }
+    .end{
+        font-size: .8rem;
+    }
+
+    .baris button{
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:468px){
+    .foto1{
+        height: 100px;
+    }
+}
