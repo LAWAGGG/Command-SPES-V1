@@ -143,7 +143,7 @@
     background-size: cover;
     position: relative;
     background-color: black;
-    background-image: url("./foto/WhatsApp\ Image\ 2024-09-17\ at\ 20.20.48_79fd4373.jpg");
+    background-image: url("../foto/WhatsApp\ Image\ 2024-09-17\ at\ 20.20.48_79fd4373.jpg");
     display: flex;
 }
 
@@ -369,7 +369,7 @@
     background-size: cover;
     position: relative;
     background-color: black;
-    background-image: url('./foto/fotoo.jpg');
+    background-image: url('../foto/fotoo.jpg');
     display: flex;
     color: white;
 }
@@ -532,3 +532,4 @@
     }
 
 }
+
